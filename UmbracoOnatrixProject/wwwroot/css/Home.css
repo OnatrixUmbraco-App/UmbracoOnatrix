@@ -1,0 +1,389 @@
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+.wrapper header {
+  height: 131px;
+  width: auto;
+}
+.wrapper header .GreenBox {
+  height: 49px;
+  background-color: #4F5955;
+}
+.wrapper header .GreenBox .GreenBoxInput {
+  display: flex;
+  margin-left: 375px;
+  gap: 772px;
+  align-items: center;
+  align-items: end;
+}
+.wrapper header .GreenBox .GreenBoxInput .AddressText p {
+  color: white;
+}
+.wrapper header .GreenBox .GreenBoxInput .SocialMediaButtons {
+  display: flex;
+}
+.wrapper header .GreenBox .GreenBoxInput .SocialMediaButtons a {
+  color: #4F5955;
+}
+.wrapper header .GreenBox .GreenBoxInput .SocialMediaButtons a:hover {
+  background-color: #343b38;
+}
+.wrapper header .GreenBox .GreenBoxInput .SocialMediaButtons a div {
+  height: 49px;
+  width: 43px;
+}
+.wrapper header .GreenBox .GreenBoxInput .SocialMediaButtons a div i {
+  color: white;
+  margin-top: 15px;
+  margin-left: 13px;
+}
+.wrapper header .WhiteBox {
+  height: 82px;
+  width: auto;
+  display: flex;
+}
+.wrapper header .WhiteBox .LogoAndButtons {
+  display: flex;
+  margin-left: 375px;
+  align-items: center;
+  gap: 195px;
+}
+.wrapper header .WhiteBox .LogoAndButtons .HeaderButtons a {
+  margin: auto;
+  padding: 0%;
+  color: #4F5955;
+  margin-left: 50px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.wrapper header .WhiteBox .LogoAndButtons .HeaderButtons a:hover {
+  text-decoration: underline;
+}
+.wrapper header .WhiteBox .SearchBar {
+  margin-left: auto;
+  margin-left: 400px;
+  margin-top: 20px;
+}
+.wrapper header .WhiteBox .SearchBar i {
+  color: black;
+}
+.wrapper header .WhiteBox .SearchBar i:hover {
+  font-size: x-large;
+}
+.wrapper main .Hero img {
+  position: absolute;
+}
+.wrapper main .Hero .HeroTextbox {
+  position: relative;
+  margin-left: 375px;
+  padding-top: 115px;
+}
+.wrapper main .Hero .HeroTextbox h1 {
+  font-weight: bold;
+  color: #4F5955;
+}
+.wrapper main .Hero .HeroTextbox p {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.wrapper main .Hero .HeroTextbox a {
+  text-decoration: none;
+  padding: 12px 30px;
+  background-color: #4F5955;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+.wrapper main .Hero .HeroTextbox a:hover {
+  background-color: #343b38;
+}
+.wrapper main .AboutUs {
+  height: 610px;
+  display: flex;
+  gap: 40px;
+}
+.wrapper main .AboutUs .AboutUsText {
+  margin-top: 200px;
+  margin-left: 375px;
+}
+.wrapper main .AboutUs .AboutUsText h2 {
+  margin-bottom: 50px;
+  font-weight: bold;
+  color: #4F5955;
+}
+.wrapper main .AboutUs .AboutUsText #AU {
+  color: #D9C3A9;
+}
+.wrapper main .AboutUs .AboutUsText img {
+  margin-top: 40px;
+}
+.wrapper main .AboutUs .AboutUsForm {
+  margin-top: 39px;
+  width: 470px;
+  height: 570px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.wrapper main .AboutUs .AboutUsForm:hover {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.wrapper main .AboutUs .AboutUsForm .AboutUsGreenBox {
+  background-color: #4F5955;
+  width: 470px;
+  height: 105px;
+}
+.wrapper main .AboutUs .AboutUsForm .AboutUsGreenBox h3 {
+  padding-top: 30px;
+  padding-left: 30px;
+  color: white;
+}
+.wrapper main .AboutUs .AboutUsForm .AboutUsGreenBox .AboutUsFormText {
+  margin-left: 20px;
+}
+.wrapper main .AboutUs .AboutUsForm .AboutUsTextAndForm {
+  margin-top: 30px;
+}
+.wrapper main .AboutUs .AboutUsForm .AboutUsTextAndForm .AboutUsFormText {
+  margin-left: 15px;
+}
+.wrapper main .AboutUs .AboutUsForm .AboutUsTextAndForm .InputAboutUs {
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.wrapper main .AboutUs .AboutUsForm .AboutUsTextAndForm .InputAboutUs input {
+  width: 430px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+.wrapper main .AboutUs .AboutUsForm .AboutUsTextAndForm .InputAboutUs select {
+  width: 430px;
+  height: 40px;
+}
+.wrapper main .AboutUs .AboutUsForm .AboutUsTextAndForm .InputAboutUs button {
+  margin-top: 40px;
+  border: none;
+  padding: 10px 190px;
+  background-color: #F2EDDC;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  font-weight: bold;
+  color: gray;
+}
+.wrapper main .AboutUs .AboutUsForm .AboutUsTextAndForm .InputAboutUs button:hover {
+  background-color: #e9e1c7;
+}
+.wrapper main .OurServices {
+  width: 1920px;
+  height: 1237px;
+  margin-top: 50px;
+  background-color: #f7f7f7;
+}
+.wrapper main .OurServices .OurServicesTextBox {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+.wrapper main .OurServices .OurServicesTextBox .OurServicesText p {
+  margin-left: 150px;
+  color: #D9C3A9;
+}
+.wrapper main .OurServices .OurServicesTextBox .OurServicesText h2 {
+  color: #4F5955;
+  font-weight: bold;
+}
+.wrapper main .OurServices .OurServicesTextBox .OurServicesText h2 span {
+  margin-left: 30px;
+}
+.wrapper main .OurServices .OurServicesUp, .wrapper main .OurServices .OurServicesDown {
+  display: flex;
+  justify-content: center;
+  gap: 43px;
+  margin-top: 47px;
+}
+.wrapper main .OurServices .OurServicesUp a, .wrapper main .OurServices .OurServicesDown a {
+  text-decoration: none;
+  color: black;
+}
+.wrapper main .OurServices .OurServicesUp a .OurServicesBox, .wrapper main .OurServices .OurServicesDown a .OurServicesBox {
+  width: 370px;
+  height: 423px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.wrapper main .OurServices .OurServicesUp a .OurServicesBox h6, .wrapper main .OurServices .OurServicesDown a .OurServicesBox h6 {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #4F5955;
+  font-weight: bold;
+  font-size: 20px;
+}
+.wrapper main .OurServices .OurServicesUp a .OurServicesBox p, .wrapper main .OurServices .OurServicesDown a .OurServicesBox p {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.wrapper main .OurServices .OurServicesUp a .OurServicesBox:hover, .wrapper main .OurServices .OurServicesDown a .OurServicesBox:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.wrapper main .OurStory {
+  width: 1920px;
+  height: 930px;
+  background-color: white;
+}
+.wrapper main .OurStory .OurStoryBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+}
+.wrapper main .OurStory .OurStoryBox .OurStoryText h2 {
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+.wrapper main .OurStory .OurStoryBox .OurStoryText h2 span {
+  margin-left: 100px;
+  color: #D9C3A9;
+  font-weight: bold;
+}
+.wrapper main .OurStory .OurStoryBox .OurStoryText p span {
+  margin-left: 100px;
+}
+.wrapper main .OurStory .OurStoryBox .OurStoryText a {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #F2EDDC;
+  width: 150px;
+  background-color: #4F5955;
+  padding: 15px 15px;
+  margin-left: 200px;
+  border-radius: 5px;
+}
+.wrapper main .OurStory .OurStoryBox .OurStoryText a:hover {
+  background-color: #343b38;
+}
+.wrapper main .OurStory .OurStoryPic {
+  display: flex;
+  justify-content: center;
+  padding-top: 166px;
+}
+.wrapper main .SuccessStories {
+  width: 1920px;
+  height: 838px;
+  background-color: #4F5955;
+}
+.wrapper main .SuccessStories .SuccessStoryBigBox {
+  display: flex;
+  justify-content: center;
+}
+.wrapper main .SuccessStories .SuccessStoryBigBox .SuccessStoryChildBox .SuccessStoryChildTextBox {
+  margin-top: 100px;
+}
+.wrapper main .SuccessStories .SuccessStoryBigBox .SuccessStoryChildBox .SuccessStoryChildTextBox .SuccesStoryTextBox p {
+  display: flex;
+  justify-content: center;
+  color: #D9C3A9;
+}
+.wrapper main .SuccessStories .SuccessStoryBigBox .SuccessStoryChildBox .SuccessStoryChildTextBox .SuccesStoryTextBox h4 {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.wrapper main .SuccessStories .SuccessStoryBigBox .SuccessStoryChildBox .SuccessStoryNumber {
+  display: flex;
+  gap: 90px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.wrapper main .SuccessStories .SuccessStoryBigBox .SuccessStoryChildBox .SuccessStoryNumber .NumberBox h2 {
+  display: flex;
+  justify-content: center;
+  color: #D9C3A9;
+  font-size: 70px;
+}
+.wrapper main .SuccessStories .SuccessStoryBigBox .SuccessStoryChildBox .SuccessStoryNumber .NumberBox p {
+  color: white;
+  font-weight: bold;
+}
+.wrapper main .SuccessStories .SuccessStoryBigBox .SuccessStoryChildBox .SuccessStoryNumber .NumberBox p span {
+  display: flex;
+  justify-content: center;
+}
+.wrapper main .SuccessStories .SuccesStorypPic {
+  display: flex;
+  justify-content: center;
+}
+.wrapper main .OurProjects {
+  width: 1920px;
+  height: 852px;
+  background-color: white;
+  padding-top: 266px;
+}
+.wrapper main .OurProjects .OurProjectsBigBox {
+  width: 960px;
+  display: flex;
+  justify-content: space-around;
+}
+.wrapper main .OurProjects .OurProjectsBigBox .OurProjectTextBox p {
+  color: #D9C3A9;
+}
+.wrapper main .OurProjects .OurProjectBoxes {
+  width: 1920px;
+  height: 480px;
+  display: flex;
+}
+.wrapper main .OurProjects .OurProjectBoxes .OurProjectPicBox {
+  width: 480px;
+  height: 480px;
+  position: relative;
+}
+.wrapper main .OurProjects .OurProjectBoxes .OurProjectPicBox img {
+  position: absolute;
+}
+.wrapper main .OurProjects .OurProjectBoxes .OurProjectPicBox .OurProjectGreenBox {
+  margin-top: 400px;
+  width: 480px;
+  height: 92px;
+  background-color: #4F5955;
+  position: absolute;
+  color: white;
+}
+.wrapper main .OurProjects .OurProjectBoxes .OurProjectPicBox .OurProjectGreenBox h6 {
+  padding-left: 20px;
+}
+.wrapper main .OurProjects .OurProjectBoxes .OurProjectPicBox .OurProjectGreenBox p {
+  padding-left: 20px;
+}
+.wrapper footer {
+  bottom: 0;
+  width: 100%;
+}
+.wrapper footer .WhiteBox {
+  display: flex;
+  height: 220px;
+  align-items: center;
+}
+.wrapper footer .WhiteBox img {
+  margin-left: 387px;
+}
+.wrapper footer .BlackBox {
+  height: 64px;
+  background-color: #0E0E0E;
+}
+.wrapper footer .BlackBox p {
+  color: #4F5955;
+  padding-top: 20px;
+  padding-left: 375px;
+}
+.wrapper footer .BlackBox p span {
+  color: #D9C3A9;
+}

@@ -1,0 +1,510 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = "mainLayout.cshtml";
+
+    
+}
+    <body>
+        <div class="wrapper">
+        <header>
+
+            <div class="GreenBox">
+                <div class="GreenBoxInput">
+                    <div class="AddressText">
+                        <p>Klarabergsviadukten 90, 111 64 Stockholm</p>
+                    </div>
+
+                    <div class="SocialMediaButtons">
+                        <a href="#"><div><i class="fa-brands fa-facebook"></i></div></a>
+                        <a href="#"><div><i class="fa-brands fa-twitter"></i></div></a>
+                        <a href="#"><div><i class="fa-brands fa-linkedin-in"></i></div></a>
+                    </div>    
+                </div>
+                
+            </div>
+
+                    
+            <div class="WhiteBox">
+                <div class="LogoAndButtons">
+                    <div class="ImageLogo">
+                       <div class="ImageLogo">
+                            <img src="@Model.Value("headerLogo")" alt="">
+
+                            @if (Model.Value<IPublishedContent>("headerLogo") != null)
+                                {
+                                    var headerLogo = Model.Value<IPublishedContent>("headerLogo").Url();
+                                    <img src="@headerLogo" alt="Header Image">   
+                                }
+                                else
+                                {
+                                    <p>Ingen bild tillgÃ¤nglig</p>
+                                }
+                        </div>
+
+                    </div>  
+                    <div class="HeaderButtons">
+                        <a href="/About.html">About</a>
+                        <a href="/Services.html">Services</a>
+                        <a href="/Projects.html">Projects</a>
+                        <a href="/ContactUs.html">Contact</a>
+                    </div>
+                    
+                </div>
+
+                <div class="SearchBar">
+                    <input type="text" placeholder="Search..">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <section class="Hero">
+
+              @if (Model.Value<IPublishedContent>("heroPicture") != null)
+                {
+                    var heroImage = Model.Value<IPublishedContent>("heroPicture").Url();
+                    <img src="@heroImage" alt="Hero Image">   
+                }
+                else
+                {
+                    <p>Ingen bild tillgÃ¤nglig</p>
+                }
+              
+                <div class="HeroTextbox">
+
+                    <h1>@Model.Value("heroTitle")</h1>
+
+                    <p>@Model.Value("heroText")</p>
+
+                    <a href="/ContactUs.html">Contact us</a>
+
+                </div>
+
+                
+
+            </section>
+
+            <section class="AboutUs">
+
+                <div class="AboutUsText">
+                    
+                    <p id="AU">@Model.Value("absoutUsTitle")</p>
+
+                    <h2>@Model.Value("aboutUsDescription")</h2>
+
+                    <p>@Model.Value("aboutUsText")</p>
+
+                    @if (Model.Value<IPublishedContent>("heroPicture") != null)
+                    {
+                        var aboutUsSignImage = Model.Value<IPublishedContent>("aboutUsPicture").Url();
+                        <img src="@aboutUsSignImage" alt="Sign Image">   
+                    }
+                    else{<p>Ingen bild tillgÃ¤nglig</p>}
+
+                    <p>@Model.Value("aboutUsRole")</p>
+
+                </div>
+
+                <div class="AboutUsForm">
+                    <div class="AboutUsGreenBox">
+                        <h3>@Model.Value("aboutUsFormTitle")</h3>
+                    </div>
+
+                    <div class="AboutUsTextAndForm">
+                        <div class="AboutUsFormText">
+                            <p>@Model.Value("aboutUsFormText")</p>
+                        </div>
+
+                        <form action="#" class="InputAboutUs">
+                            <input type="text" placeholder="name">
+                            <input type="email" placeholder="email">
+                            <input type="number" placeholder="phone">
+                            <select name="Financial consulting"></select>
+                            <button type="submit">submit</button>
+                        </form>
+                    </div>
+                </div>
+                
+
+
+
+            </section>
+
+            <section class="OurServices">
+                <div class="OurServicesTextBox">
+                   
+                    <div class="OurServicesText">
+                        <p>@Model.Value("ourServicesTitle")</p>
+    
+                        <h2>@Model.Value("ourServicesDescription")</h2>
+                    </div>
+
+                </div>
+
+
+
+              <div class="OurServicesBoxes">
+
+                    <div class="OurServicesUp">
+                        
+                        <a href="#">
+
+                            <div class="OurServicesBox">
+
+                                <h6>@Model.Value("ourServicesBoxOneTitle")</h6>
+                                
+                                @if (Model.Value<IPublishedContent>("ourServicesBoxOnePicture") != null)
+                                    {
+                                        var ourServicesBoxOneImage = Model.Value<IPublishedContent>("ourServicesBoxOnePicture").Url();
+                                        <img src="@ourServicesBoxOneImage" alt="ourServicesBoxOne Image">
+                                    }
+                                    else
+                                    {
+                                        <p>Ingen bild tillgänglig</p>
+                                    }
+
+                                
+                                <p>@Model.Value("ourServicesBoxOneText")</p>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="OurServicesBox">
+
+                                <h6>@Model.Value("ourServicesBoxTwoTitle")</h6>
+
+                                 @if (Model.Value<IPublishedContent>("ourServicesBoxTwoPicture") != null)
+                                {
+                                    var ourServicesBoxTwoImage = Model.Value<IPublishedContent>("ourServicesBoxTwoPicture").Url();
+                                    <img src="@ourServicesBoxTwoImage" alt="ourServicesBoxTwo Image">
+                                }
+                                else
+                                {
+                                    <p>Ingen bild tillgÃ¤nglig</p>
+                                }
+
+                                <p>@Model.Value("ourServicesBoxTwoText")</p>
+                            </div>
+                    
+                        </a>
+
+                        <a href="#">
+
+                            <div class="OurServicesBox">
+
+                                <h6>@Model.Value("ourServicesBoxThreeTitle")</h6>
+
+                                @if (Model.Value<IPublishedContent>("ourServicesBoxThreePicture") != null)
+                                    {
+                                        var ourServicesBoxThreeImage = Model.Value<IPublishedContent>("ourServicesBoxThreePicture").Url();
+                                        <img src="@ourServicesBoxThreeImage" alt="ourServicesBoxThree Image">
+                                    }
+                                    else
+                                    {
+                                        <p>Ingen bild tillgänglig</p>
+                                    }
+
+                                    
+                                <p>@Model.Value("ourServicesBoxThreeText")</p>
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                    <div class="OurServicesDown">
+
+                        <a href="#">
+                            <div class="OurServicesBox">
+
+                                <h6>@Model.Value("ourServicesBoxFourTitle")</h6>
+
+                                 @if (Model.Value<IPublishedContent>("ourServicesBoxFourPicture") != null)
+                                    {
+                                        var ourServicesBoxFourImage = Model.Value<IPublishedContent>("ourServicesBoxFourPicture").Url();
+                                        <img src="@ourServicesBoxFourImage" alt="ourServicesBoxFour Image">
+                                    }
+                                    else
+                                    {
+                                        <p>Ingen bild tillgänglig</p>
+                                    }
+                                
+                                <p>@Model.Value("ourServicesBoxFourText")</p>
+                            </div>
+                        </a>
+
+                        <a href="#">
+
+                            <div class="OurServicesBox">
+                                <h6>@Model.Value("ourServicesBoxFiveTitle")</h6>
+
+                                 @if (Model.Value<IPublishedContent>("ourServicesBoxFivePicture") != null)
+                                    {
+                                        var ourServicesBoxFiveImage = Model.Value<IPublishedContent>("ourServicesBoxFivePicture").Url();
+                                        <img src="@ourServicesBoxFiveImage" alt="ourServicesBoxFive Image">
+                                    }
+                                    else
+                                    {
+                                        <p>Ingen bild tillgänglig</p>
+                                    }
+                                
+                                <p>@Model.Value("ourServicesBoxFiveText")</p>
+                            </div>
+
+                        </a>
+
+                        <a href="#">
+                            <div class="OurServicesBox">
+
+                                <h6>@Model.Value("ourServicesBoxSixTitle")</h6>
+
+                                 @if (Model.Value<IPublishedContent>("ourServicesBoxSixPicture") != null)
+                                    {
+                                        var ourServicesBoxSixImage = Model.Value<IPublishedContent>("ourServicesBoxSixPicture").Url();
+                                        <img src="@ourServicesBoxSixImage" alt="ourServicesBoxSix Image">
+                                    }
+                                    else
+                                    {
+                                        <p>Ingen bild tillgänglig</p>
+                                    }
+                                
+                                <p>@Model.Value("ourServicesBoxSixText")</p>
+                            </div>
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="OurStory">
+
+                <div class="OurStoryBox">
+                   
+                    <div class="OurStoryText">
+
+                         
+                    <h2>@Model.Value("ourStoryTitle")</h2>
+
+                    <p>@Model.Value("ourStoryText")</p>
+
+                  
+                    <a href="#">
+                            Read our story
+                    </a>
+
+                </div>
+
+                   
+                </div>
+
+                <div class="OurStoryPic">
+
+                    @if (Model.Value<IPublishedContent>("ourStoryPicture") != null)
+                        {
+                            var ourStoryPicture = Model.Value<IPublishedContent>("ourStoryPicture").Url();
+                            <img src="@ourStoryPicture" alt="ourStoryPicture">
+                        }
+                    else
+                        {
+                            <p>Ingen bild tillgänglig</p>
+                        }
+
+                     
+
+                </div>
+                 
+
+            </section>
+
+            <section class="SuccessStories">
+                <div class="SuccessStoryBigBox">
+                    <div class="SuccessStoryChildBox">
+                        <div class="SuccessStoryChildTextBox">
+                            <div class="SuccesStoryTextBox">
+                                <p>
+                                    @Model.Value("successStoryTitle")
+                                </p>
+                                
+                                <h4>
+                                    @Model.Value("successStoryText")
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="SuccessStoryNumber">
+                            <div class="NumberBox">
+                                <h2>
+                                    @Model.Value("successStoryBoxOneNumber")
+                                </h2>
+                                <p>
+                                    @Model.Value("successStoryBoxOneText")
+                                </p>
+                            </div>
+                            <div class="NumberBox">
+                                <h2>
+                                   @Model.Value("successStoryBoxTwoNumber")
+                                </h2>
+                                <p>
+                                    @Model.Value("successStoryBoxTwoText")
+                                </p>
+                            </div>
+                            <div class="NumberBox">
+                                <h2>
+                                    @Model.Value("successStoryBoxThreeNumber")
+                                </h2>
+                                <p>
+                                  @Model.Value("successStoryBoxThreeText")
+                                </p>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="SuccesStorypPic">
+                    @if (Model.Value<IPublishedContent>("successStoryPicture") != null)
+                        {
+                            var successStoryPicture = Model.Value<IPublishedContent>("successStoryPicture").Url();
+                            <img src="@successStoryPicture" alt="successStory Image">
+                        }
+                    else
+                        {
+                            <p>Ingen bild tillgänglig</p>
+                        }
+                    
+                </div>
+
+            </section>
+
+            <section class="OurProjects">
+                <div class="OurProjectsBigBox">
+                    <div class="OurProjectTextBox">
+                        <p>
+                            @Model.Value("ourProjectTitle")
+                        </p>
+
+                        <h4>
+                           @Model.Value("ourProjectText")
+                        </h4>
+                    </div>
+
+                </div>
+
+                <div class="OurProjectBoxes">
+                    <div class="OurProjectPicBox">
+                        @if (Model.Value<IPublishedContent>("ourProjectBoxOnePicture") != null)
+                            {
+                                var ourProjectBoxOnePicture = Model.Value<IPublishedContent>("ourProjectBoxOnePicture").Url();
+                                <img src="@ourProjectBoxOnePicture" alt="ourProjectBoxOne Image">
+                            }
+                        else
+                            {
+                                <p>Ingen bild tillgänglig</p>
+                            }
+                          
+                        <div class="OurProjectGreenBox">
+                            <h6>
+                            @Model.Value("ourProjectBoxOneTitle")
+                           </h6>
+                           <p>
+                            @Model.Value("ourProjectBoxOneText")
+                           </p>
+                        </div>
+                    </div>
+                    <div class="OurProjectPicBox">
+                        @if (Model.Value<IPublishedContent>("ourProjectBoxTwoPicture") != null)
+                            {
+                                var ourProjectBoxTwoPicture = Model.Value<IPublishedContent>("ourProjectBoxTwoPicture").Url();
+                                <img src="@ourProjectBoxTwoPicture" alt="ourProjectBoxTwo Image">
+                            }
+                        else
+                            {
+                                <p>Ingen bild tillgänglig</p>
+                            }
+                        <div class="OurProjectGreenBox">
+                            <h6>
+                                @Model.Value("ourProjectBoxTwoTitle")
+                            </h6>
+                            <p>
+                             @Model.Value("ourProjectBoxTwoText")
+                            </p>
+                         </div>
+                    </div>
+
+                    <div class="OurProjectPicBox">
+                        @if (Model.Value<IPublishedContent>("ourProjectBoxThreePicture") != null)
+                            {
+                                var ourProjectBoxThreePicture = Model.Value<IPublishedContent>("ourProjectBoxThreePicture").Url();
+                                <img src="@ourProjectBoxThreePicture" alt="ourProjectBoxThree Image">
+                            }
+                        else
+                            {
+                                <p>Ingen bild tillgänglig</p>
+                            }
+                        <div class="OurProjectGreenBox">
+                            <h6>
+                                @Model.Value("ourProjectBoxThreeTitle")
+                            </h6>
+                            <p>
+                             @Model.Value("ourProjectBoxThreeText")
+                            </p>
+                         </div>
+                    </div>
+
+                    <div class="OurProjectPicBox">
+                        @if (Model.Value<IPublishedContent>("ourProjectBoxFourPicture") != null)
+                            {
+                                var ourProjectBoxFourPicture = Model.Value<IPublishedContent>("ourProjectBoxFourPicture").Url();
+                                <img src="@ourProjectBoxFourPicture" alt="ourProjectBoxFour Image">
+                            }
+                        else
+                            {
+                                <p>Ingen bild tillgänglig</p>
+                            }
+                        <div class="OurProjectGreenBox">
+                            <h6>
+                               @Model.Value("ourProjectBoxFourTitle")
+                            </h6>
+                            <p>
+                             @Model.Value("ourProjectBoxFourText")
+                            </p>
+                         </div>
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+        <footer>
+            <div class="WhiteBox">
+                @if (Model.Value<IPublishedContent>("footerImage") != null)
+                {
+                    var footerImage = Model.Value<IPublishedContent>("footerImage").Url();
+                    <img src="@footerImage" alt="footerImage">
+                }
+                else
+                {
+                    <p>Ingen bild tillgänglig</p>
+                }                
+               
+            </div>
+    
+            <div class="BlackBox">
+                <p>© Onatrix. All Rights Reserved. Credits to <span>Themesflat</span></p>
+            </div>
+        </footer>
+        </div>
+    </body>
