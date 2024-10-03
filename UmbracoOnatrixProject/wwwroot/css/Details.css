@@ -1,0 +1,240 @@
+body {
+  overflow-x: hidden;
+  width: 1920px;
+}
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  height: 131px;
+  width: 1920px;
+}
+header .GreenBox {
+  height: 49px;
+  width: 1920px;
+  background-color: #4F5955;
+}
+header .GreenBox .GreenBoxInput {
+  display: flex;
+  margin-left: 375px;
+  gap: 772px;
+  align-items: center;
+  align-items: end;
+}
+header .GreenBox .GreenBoxInput .AddressText p {
+  color: white;
+}
+header .GreenBox .GreenBoxInput .SocialMediaButtons {
+  display: flex;
+}
+header .GreenBox .GreenBoxInput .SocialMediaButtons a {
+  color: #4F5955;
+}
+header .GreenBox .GreenBoxInput .SocialMediaButtons a:hover {
+  background-color: #343b38;
+}
+header .GreenBox .GreenBoxInput .SocialMediaButtons a div {
+  height: 49px;
+  width: 43px;
+}
+header .GreenBox .GreenBoxInput .SocialMediaButtons a div i {
+  color: white;
+  margin-top: 15px;
+  margin-left: 13px;
+}
+header .WhiteBox {
+  height: 82px;
+  width: auto;
+  display: flex;
+}
+header .WhiteBox .LogoAndButtons {
+  display: flex;
+  margin-left: 375px;
+  align-items: center;
+  gap: 195px;
+}
+header .WhiteBox .LogoAndButtons .HeaderButtons a {
+  margin: auto;
+  padding: 0%;
+  color: #4F5955;
+  margin-left: 50px;
+  font-weight: bold;
+  text-decoration: none;
+}
+header .WhiteBox .LogoAndButtons .HeaderButtons a:hover {
+  text-decoration: underline;
+}
+header .WhiteBox .SearchBar {
+  margin-left: auto;
+  margin-left: 400px;
+  margin-top: 20px;
+}
+header .WhiteBox .SearchBar i {
+  color: black;
+}
+header .WhiteBox .SearchBar i:hover {
+  font-size: x-large;
+}
+
+main .Details {
+  width: 100%;
+  height: 245px;
+  background-color: #F7F7F7;
+}
+main .Details .DetailsChild {
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+}
+main .Details .DetailsChild .DetailsText h2 {
+  font-weight: bold;
+  color: #4F5955;
+}
+main .Details .DetailsChild .DetailsText p {
+  display: flex;
+  justify-content: center;
+}
+main .Details .DetailsChild .DetailsText p span {
+  color: #D9C3A9;
+}
+main .DetailsMain {
+  width: 100%;
+}
+main .DetailsMain .DetailsParentBox {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  gap: 50px;
+}
+main .DetailsMain .DetailsParentBox p {
+  color: #4F5955;
+}
+main .DetailsMain .DetailsParentBox h4 {
+  color: #4F5955;
+  font-weight: bold;
+}
+main .DetailsMain .DetailsParentBox img {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+main .DetailsMain .DetailsParentBox .DetailsDate {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+main .DetailsMain .DetailsParentBox .DetailsWoman {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+main .DetailsMain .DetailsParentBox .DetailsTags h6 {
+  padding-bottom: 20px;
+  font-weight: bold;
+  color: #4F5955;
+}
+main .DetailsMain .DetailsParentBox .DetailsTags a {
+  background-color: #D9C3A9;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 30px;
+  color: #4F5955;
+}
+main .DetailsMain .DetailsParentBox .DetailsTags a:hover {
+  background-color: #af9d89;
+}
+main .DetailsMain .DetailsParentBox .VL {
+  border-right: 1px solid rgb(223, 218, 218);
+  height: 2300px;
+}
+main .DetailsMain .DetailsParentBox .RecentProjects .RecentBox {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+main .DetailsMain .DetailsParentBox .RecentProjects .AboutUsCornerBottom {
+  width: 306px;
+  height: 223px;
+  background-color: #4F5955;
+  margin-top: 50px;
+}
+main .DetailsMain .DetailsParentBox .RecentProjects .AboutUsCornerBottom h4 {
+  color: #D9C3A9;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+main .DetailsMain .DetailsParentBox .RecentProjects .AboutUsCornerBottom p {
+  color: #D9C3A9;
+  padding-left: 20px;
+}
+main .DetailsMain .DetailsParentBox .RecentProjects .AboutUsCornerEmail {
+  padding-left: 10px;
+}
+main .DetailsMain .DetailsParentBox .RecentProjects .AboutUsCornerEmail input {
+  width: 265px;
+  height: 50px;
+}
+main .DetailsMain .DetailsParentBox .RecentProjects .AboutUsCornerEmail i {
+  color: #F7F7F7;
+}
+main .ContactInformation {
+  width: 100%;
+  height: 713px;
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 90px;
+}
+main .ContactInformation .ContactPicture {
+  display: flex;
+  align-items: end;
+}
+main .ContactInformation .ContactText {
+  display: flex;
+  align-items: center;
+}
+main .ContactInformation .ContactText h2 {
+  padding-bottom: 30px;
+  font-weight: bold;
+  color: #4F5955;
+}
+main .ContactInformation .ContactText h6 {
+  color: #4F5955;
+}
+main .ContactInformation .Contact .ContactChild {
+  display: flex;
+  gap: 10px;
+}
+
+footer {
+  bottom: 0;
+  width: 1920px;
+}
+footer .WhiteBox {
+  display: flex;
+  height: 220px;
+  width: 1920px;
+  align-items: center;
+}
+footer .WhiteBox img {
+  margin-left: 387px;
+}
+footer .BlackBox {
+  height: 64px;
+  width: 100%;
+  background-color: #0E0E0E;
+}
+footer .BlackBox p {
+  color: #4F5955;
+  padding-top: 20px;
+  padding-left: 375px;
+}
+footer .BlackBox p span {
+  color: #D9C3A9;
+}

@@ -1,0 +1,216 @@
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  height: 131px;
+  width: auto;
+}
+header .GreenBox {
+  height: 49px;
+  background-color: #4F5955;
+}
+header .GreenBox .GreenBoxInput {
+  display: flex;
+  margin-left: 375px;
+  gap: 772px;
+  align-items: center;
+  align-items: end;
+}
+header .GreenBox .GreenBoxInput .AddressText p {
+  color: white;
+}
+header .GreenBox .GreenBoxInput .SocialMediaButtons {
+  display: flex;
+}
+header .GreenBox .GreenBoxInput .SocialMediaButtons a {
+  color: #4F5955;
+}
+header .GreenBox .GreenBoxInput .SocialMediaButtons a:hover {
+  background-color: #343b38;
+}
+header .GreenBox .GreenBoxInput .SocialMediaButtons a div {
+  height: 49px;
+  width: 43px;
+}
+header .GreenBox .GreenBoxInput .SocialMediaButtons a div i {
+  color: white;
+  margin-top: 15px;
+  margin-left: 13px;
+}
+header .WhiteBox {
+  height: 82px;
+  width: auto;
+  display: flex;
+}
+header .WhiteBox .LogoAndButtons {
+  display: flex;
+  margin-left: 375px;
+  align-items: center;
+  gap: 195px;
+}
+header .WhiteBox .LogoAndButtons .HeaderButtons a {
+  margin: auto;
+  padding: 0%;
+  color: #4F5955;
+  margin-left: 50px;
+  font-weight: bold;
+  text-decoration: none;
+}
+header .WhiteBox .LogoAndButtons .HeaderButtons a:hover {
+  text-decoration: underline;
+}
+header .WhiteBox .SearchBar {
+  margin-left: auto;
+  margin-left: 400px;
+  margin-top: 20px;
+}
+header .WhiteBox .SearchBar i {
+  color: black;
+}
+header .WhiteBox .SearchBar i:hover {
+  font-size: x-large;
+}
+
+main .OurProjects {
+  width: 100%;
+  height: 245px;
+  background-color: #f7f7f7;
+}
+main .OurProjects .OurProjectsBox {
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+}
+main .OurProjects .OurProjectsBox .OurProjectTextBox h2 {
+  font-weight: bold;
+  color: #4F5955;
+}
+main .OurProjects .OurProjectsBox .OurProjectTextBox p {
+  display: flex;
+  justify-content: center;
+}
+main .OurProjects .OurProjectsBox .OurProjectTextBox p span {
+  color: #D9C3A9;
+}
+main .OurSupport {
+  width: 100%;
+  height: 1262px;
+  padding-top: 40px;
+}
+main .OurSupport .OurSupportParentBox {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+main .OurSupport .OurSupportParentBox .OurSupportTextBoxes .OurSupportTextBox {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  color: #4F5955;
+}
+main .OurSupport .OurSupportParentBox .OurSupportTextBoxes .OurSupportTextBox a {
+  text-decoration: none;
+  color: #4F5955;
+  font-weight: bold;
+}
+main .OurSupport .OurSupportParentBox .OurSupportTextBoxes .OurSupportTextBox a i {
+  color: #D9C3A9;
+}
+main .OurSupport .OurSupportParentBox .OurSupportTextBoxes .OurSupportTextBox a:hover {
+  text-decoration: underline;
+}
+main .OurSupport .OurSupportParentBox .VerticalLine {
+  border-left: 1px solid rgb(217, 213, 213);
+  height: 1000px;
+}
+main .OurSupport .OurSupportParentBox .RecentProjects .RecentBox {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+main .OurSupport .OurSupportParentBox .RecentProjects .AboutUsCornerBottom {
+  width: 306px;
+  height: 223px;
+  background-color: #4F5955;
+  margin-top: 50px;
+}
+main .OurSupport .OurSupportParentBox .RecentProjects .AboutUsCornerBottom h4 {
+  color: #D9C3A9;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+main .OurSupport .OurSupportParentBox .RecentProjects .AboutUsCornerBottom p {
+  color: #D9C3A9;
+  padding-left: 20px;
+}
+main .OurSupport .OurSupportParentBox .RecentProjects .AboutUsCornerEmail {
+  padding-left: 10px;
+}
+main .OurSupport .OurSupportParentBox .RecentProjects .AboutUsCornerEmail input {
+  width: 265px;
+  height: 50px;
+}
+main .OurSupport .OurSupportParentBox .RecentProjects .AboutUsCornerEmail i {
+  color: #F7F7F7;
+}
+main .ContactInformation {
+  width: 100%;
+  height: 713px;
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+}
+main .ContactInformation .ContactPicture {
+  display: flex;
+  align-items: end;
+}
+main .ContactInformation .ContactText {
+  display: flex;
+  align-items: center;
+}
+main .ContactInformation .ContactText h2 {
+  padding-bottom: 30px;
+  font-weight: bold;
+  color: #4F5955;
+}
+main .ContactInformation .ContactText h6 {
+  color: #4F5955;
+}
+main .ContactInformation .Contact .ContactChild {
+  display: flex;
+  gap: 10px;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+}
+footer .WhiteBox {
+  display: flex;
+  height: 220px;
+  align-items: center;
+}
+footer .WhiteBox img {
+  margin-left: 387px;
+}
+footer .BlackBox {
+  height: 64px;
+  background-color: #0E0E0E;
+}
+footer .BlackBox p {
+  color: #4F5955;
+  padding-top: 20px;
+  padding-left: 375px;
+}
+footer .BlackBox p span {
+  color: #D9C3A9;
+}
