@@ -89,26 +89,29 @@
                 </div>
 
                 <div class="YourBusinessTopBoxes">
-                    <div class="YourBusinessBox">
-                        <h4>
-                            @Model.Value("yourBusinessBoxOneTitle")
-                        </h4>
+                     <a href="/RiskManagement">
 
-                         @if (Model.Value<IPublishedContent>("yourBusinessBoxOnePicture") != null)
-                            {
-                                var yourBusinessBoxOnePicture = Model.Value<IPublishedContent>("yourBusinessBoxOnePicture").Url();
-                                <img src="@yourBusinessBoxOnePicture" alt="yourBusinessBoxOnePicture ">   
-                            }
-                            else
-                            {
-                                <p>Ingen bild tillgänglig</p>
-                            }
+                        <div class="YourBusinessBox">
+                            <h4>
+                                @Model.Value("yourBusinessBoxOneTitle")
+                            </h4>
 
-                        <p>
-                           @Model.Value("yourBusinessBoxOneText")
-                        </p>
+                            @if (Model.Value<IPublishedContent>("yourBusinessBoxOnePicture") != null)
+                                {
+                                    var yourBusinessBoxOnePicture = Model.Value<IPublishedContent>("yourBusinessBoxOnePicture").Url();
+                                    <img src="@yourBusinessBoxOnePicture" alt="yourBusinessBoxOnePicture ">   
+                                }
+                                else
+                                {
+                                    <p>Ingen bild tillgänglig</p>
+                                }
 
-                    </div>
+                            <p>
+                            @Model.Value("yourBusinessBoxOneText")
+                            </p>
+
+                        </div>
+                    </a>
                     <div class="YourBusinessBox">
                         <h4>
                             @Model.Value("yourBusinessBoxTwoTitle")

@@ -188,6 +188,10 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 80px;
+  a{
+    text-decoration: none;
+    color: #4F5955;
+  }
 }
 .wrapper main .OurServices .OurServicesTextBox .OurServicesText p {
   margin-left: 150px;
